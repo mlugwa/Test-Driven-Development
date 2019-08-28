@@ -1,6 +1,5 @@
 function add(str)
 {
-	console.log(s);
         var i = 0;
         var sum = 0;
         var arr = str.split(',');
