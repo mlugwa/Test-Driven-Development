@@ -14,4 +14,7 @@ describe("Add", function(){
 	it("should handle newline characters between numbers.", function(){
 		expect(add("33\n7,\n,4")).toBe(44);
 	});
+	it("should handle different delimiters.", function(){
+		expect(add("//;\n1;2ddddff")).toBe(3);
+	});
 });

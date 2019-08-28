@@ -2,8 +2,9 @@ function add(str)
 {
         var i = 0;
         var sum = 0;
-	var s = str.replace(/\n/g, ',');
-        var arr = s.split(',');
+	var nums = /-?[0-9]+/g;
+
+	var arr = str.match(nums);
 	if (str === "")
 		return (0);
         while (i < arr.length)
