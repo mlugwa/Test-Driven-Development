@@ -11,4 +11,7 @@ describe("Add", function(){
 	it("should handle an unknown amount of numbers.", function(){
 		expect(add("5,5,5,5,5,5,5")).toBe(35);
 	});
+	it("should handle newline characters between numbers.", function(){
+		expect(add("33\n7,\n,4")).toBe(44);
+	});
 });
