@@ -23,6 +23,8 @@ function add(str)
 
 		if (arr[i] === "")
 			i++;
+		if (arr[i] > 1000)
+			i++;
 		if (arr[i] < 0)
 			throw "Error: Negative numbers are not allowed! The negative numbers are " + negs;
                 var num = arr[i++];
