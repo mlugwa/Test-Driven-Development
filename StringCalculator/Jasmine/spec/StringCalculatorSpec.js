@@ -1,5 +1,7 @@
+var add = require('../src/stringCalculator.js');
+
 describe("Add", function(){
-	it("should return 0 if the string passed in is of length 0", function(){
+	it("should return 0 if the string passed in is of length 0/empty", function(){
 		expect(add("")).toBe(0);
 	});
 	it("should return a single number as it is.", function(){

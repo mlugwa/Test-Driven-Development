@@ -33,3 +33,5 @@ function add(str)
         }
         return (sum);
 }
+
+module.exports = add;
